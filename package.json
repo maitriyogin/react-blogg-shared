@@ -2,9 +2,11 @@
   "name": "react-blogg-shared",
   "version": "1.0.0",
   "description": "shared component for the bloggs app, mainly contains the redux setup that is shared between the native and web client",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha --compilers js:babel-register",
+    "build": "babel src --out-dir lib --no-comments",
+    "clean": "rm -fr lib"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,27 @@
   "bugs": {
     "url": "https://github.com/maitriyogin/react-blogg-shared/issues"
   },
-  "homepage": "https://github.com/maitriyogin/react-blogg-shared#readme"
+  "homepage": "https://github.com/maitriyogin/react-blogg-shared#readme",
+  "devDependencies": {
+    "babel-core": "^6.6.5",
+    "babel-eslint": "^6.0.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.5.4",
+    "eslint": "^2.7.0",
+    "eslint-config-xo": "^0.12.0",
+    "eslint-config-xo-react": "^0.5.0",
+    "eslint-config-xo-space": "^0.11.0",
+    "eslint-plugin-babel": "^3.0.0",
+    "eslint-plugin-react": "^4.3.0",
+    "mocha": "^2.4.5",
+    "xo": "^0.13.0"
+  },
+  "dependencies": {
+    "immutable": "^3.7.6",
+    "redux": "^3.4.0",
+    "redux-thunk": "^1.0.0",
+    "socket.io-client": "^1.4.5"
+  }
 }
