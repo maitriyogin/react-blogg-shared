@@ -1,0 +1,23 @@
+{
+  "name": "react-blogg-shared",
+  "version": "1.0.0",
+  "description": "shared component for the bloggs app, mainly contains the redux setup that is shared between the native and web client",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maitriyogin/react-blogg-shared.git"
+  },
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "author": "stephen white",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maitriyogin/react-blogg-shared/issues"
+  },
+  "homepage": "https://github.com/maitriyogin/react-blogg-shared#readme"
+}
